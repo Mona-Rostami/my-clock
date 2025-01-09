@@ -5,6 +5,7 @@
 }
 
 body{
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,7 +63,7 @@ body.light .clock::before {
     background: #008eff;
 }
 
-.indicator div{
+.indicators div{
     position: absolute;
     width: 2px;
 height: 15px;
@@ -71,10 +72,71 @@ background: rgba(87, 78, 78, 0.51);
 }
 
 
+.indicators div:nth-child(1){
+    transform: rotate(30deg) translateY(-130px) translateX(-5px)
+}
+
+.indicators div:nth-child(2){
+    transform: rotate(60deg) translateY(-130px) translateX(-5px)
+}
+
+.indicators div:nth-child(3){
+    transform: rotate(120deg) translateY(-130px) translateX(-5px)
+}
+
+.indicators div:nth-child(4){
+    transform: rotate(140deg) translateY(-130px) translateX(12px)
+}
 
 
+.indicators div:nth-child(5){
+    transform: rotate(220deg) translateY(-130px) translateX(-5px)
+}
+
+.indicators div:nth-child(6){
+    transform: rotate(250deg) translateY(-130px) translateX(-5px)
+}
+
+.indicators div:nth-child(7){
+    transform: rotate(300deg) translateY(-130px) translateX(-5px)
+}
+
+.indicators div:nth-child(8){
+    transform: rotate(330deg) translateY(-130px) translateX(-5px)
+}
 
 
+.numbers{
+    position: relative;
+    font-size: 30px;
+    font-weight: bold;
+    color: #808080;
+} 
 
+#three{
+    position: absolute;
+left: 120px;
+top: -15px;
+
+}
+
+#six{
+    position: absolute;
+    top: 110px;
+    left: -8px;
+}
+
+
+#nine{
+    position: absolute;
+    right: 120px;
+    top: -15px;
+}
+
+#twelve{
+    position: absolute;
+    bottom: 110px;
+    left: -15px;
+}
 
 
