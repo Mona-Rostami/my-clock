@@ -60,7 +60,7 @@ body.light{
 }
 
 body.light .clock::before {
-    background: #008eff;
+    background: #747b6e;
 }
 
 .indicators div{
@@ -72,9 +72,16 @@ background: rgba(87, 78, 78, 0.51);
 }
 
 
+
+
+
+
+
+
 .indicators div:nth-child(1){
-    transform: rotate(30deg) translateY(-130px) translateX(-5px)
+    transform: rotate(30deg) translateY(-130px) translateX(-3px);
 }
+
 
 .indicators div:nth-child(2){
     transform: rotate(60deg) translateY(-130px) translateX(-5px)
@@ -140,3 +147,83 @@ top: -15px;
 }
 
 
+.hours,.min,.secendly{
+    position: absolute;
+    z-index: 10;
+}
+
+ .hs::after{
+content: '';
+position: absolute;
+width: 8px;
+height: 80px;
+background-color: rgb(206, 24, 11);
+border-radius: 5px 5px 0px 0px;
+z-index: 10;
+}
+
+.mn::after{
+content: '';
+width: 5px;
+height: 90px;
+background-color: darkgreen;
+border-radius: 2px 0px 0px 5px;
+position: absolute;
+z-index: 11;
+
+}
+
+
+.sec::after{
+    content: '';
+    width: 2px;
+    height: 150px;
+    background-color: #14649e;
+position: absolute;
+z-index: 12;
+border-radius: 5px 5px 0 0;
+
+} 
+
+.time{
+    height: 20px;
+    width: 10px;
+    position: absolute;
+    top: 60%;
+    border: 5ch solid #0f2632;
+    background: #091921;
+    border-radius: 5px;
+    color: #808080;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.1);
+
+}
+
+.time{
+    background-color: #808080;
+    border: #a6be93;
+}
+
+.toggleClass{
+    width: 25px;
+    height: 25px;
+    background-color: aquamarine;
+    position: fixed;
+    right: 90px;
+    top: 5%;
+    border-radius: 50%;
+}
+.toggleClass::before{
+content: 'Light Mode';
+position: absolute;
+left: 30px;
+white-space: nowrap;
+
+}
+.toggleClass{
+    background: #091921;
+    color: #091921;
+}
+.toggleClass::before{
+content: 'Darck Mode';
+}
