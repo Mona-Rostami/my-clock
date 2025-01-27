@@ -10,7 +10,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: rgb(19, 35, 39);
+    background-color:#2C3639;
 }
 
 body.light{
@@ -20,11 +20,14 @@ body.light{
 .clock{
      width: 350px;
      height: 350px;
-      background-color:#091921; 
+      background-color:#2C3639; 
      display: flex;
      justify-content: center;
      align-items: center;
-     box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.05),    20px 20px 20px rgba(0, 0, 0, 0.3),    inset -8px -8px 15px rgba(255, 255, 255, 0.05),    inset 20px 20px 20px rgba(0, 0, 0, 0.3);
+     border-radius: 50%;
+     box-shadow:  8px 8px 16px #010c0f,
+             -8px -8px 16px #49595d, inset 10px 10px 16px #0f1010bf,
+             inset -10px -10px 16px #cbd6d92d;
       border-radius:50% ; 
      -webkit-border-radius:50% ;
      -moz-border-radius:50% ;
@@ -33,7 +36,7 @@ body.light{
 }
 
  body.light .clock{
-     background-color: aliceblue; 
+     background-color:#fdfcf5; 
     border: 20px solid rgba(227, 226, 222, 0.476);
 
     box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.5),
@@ -49,7 +52,7 @@ body.light{
     position: absolute;
     height: 15px;
     width: 15px;
-    background: #b1daee;
+    background:#f5e9d2;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -59,20 +62,27 @@ body.light{
 
 }
 
-body.light .clock::before {
-    background: #929c8a;
+body .light .clock::before {
+    background:#B5C18E;
+    
 }
 
-.indicators div{
+.light .indicators div{
     position: absolute;
     width: 2px;
 height: 15px;
-background: rgba(126, 119, 119, 0.51);
+background:#303530;
 
 }
 
 
+ .indicators div{
+    position: absolute;
+    width: 2px;
+height: 15px;
+background:#D5CEA3;
 
+}
 
 
 
@@ -117,7 +127,7 @@ background: rgba(126, 119, 119, 0.51);
     position: relative;
     font-size: 30px;
     font-weight: bold;
-    color: #808080;
+    color: #D5CEA3;
 } 
 
 #three{
@@ -190,10 +200,10 @@ top: -15px;
  .hs::after{
 content: '';
 position: absolute;
-top: 5px;
+top: 8px;
 width: 8px;
-height: 80px;
-background-color: rgb(206, 24, 11);
+height: 65px;
+background-color:#A27B5C;
 border-radius: 5px 5px 0px 0px;
 z-index: 10;
 }
@@ -201,10 +211,10 @@ z-index: 10;
 .mn::after{
 content: '';
 position: absolute;
-top: 10px;
+top: 1px;
 width: 5px;
-height: 90px;
-background-color: darkgreen;
+height: 100px;
+background-color: #74512D;
 border-radius: 2px 0px 0px 5px;
 z-index: 11;
 
@@ -217,7 +227,7 @@ z-index: 11;
     bottom: 80px;
     width: 2px;
     height: 150px;
-    background-color: #14649e;
+    background-color: #C5A880;
     z-index:12;
     border-radius: 5px 5px 0 0;
 
@@ -228,10 +238,10 @@ z-index: 11;
     position: absolute;
     top: 60%;
     padding: 0 5px;
-    border: 1px solid #2a5368;
-    background: #161b1b;
+    border: 1px solid #F8F4E1;
+    background: #E5D0AC;
     border-radius: 5px;
-    color: #808080;
+    color: #3D3D3D;
     font-weight: bold;
     box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.1);
 }
@@ -250,8 +260,8 @@ body.light .time{
     height: 20px;
     font-size: 18px;
     border-radius: 50%;
-    background: #d1dae3;
-    color: #d1dae3;
+    background: #F1F1F1;
+    color: #F1F1F1;
     font-family: monospace;
     cursor: pointer;
     display: flex;
