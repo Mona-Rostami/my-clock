@@ -14,7 +14,7 @@ body{
 }
 
 body.light{
-    background-color:whitesmoke;
+    background-color:#CAE0BC
 }
 
 .clock{
@@ -36,14 +36,12 @@ body.light{
 }
 
  body.light .clock{
-     background-color:#fdfcf5; 
-    border: 20px solid rgba(227, 226, 222, 0.476);
+     background-color:#F1F6F9; 
+    border: 20px solid #93103ef3;
 
-    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.5),
-    10px 10px 10px rgba(0, 0, 0, 0.3),
-    inset -8px -8px 15px rgba(255, 255, 255, 0.5),
-    inset 10px 10px 10px rgba(0, 0, 0, 0.3);
-   
+    box-shadow: 9px 9px 16px #636e5c,
+    -9px -9px 16px #ffffff,inset 8px 8px 13px #636e5c,
+    inset -8px -8px 13px #ffffff;
 }
 
 
@@ -52,7 +50,7 @@ body.light{
     position: absolute;
     height: 15px;
     width: 15px;
-    background:#f5e9d2;
+    background:#eddfc5;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -62,8 +60,8 @@ body.light{
 
 }
 
-body .light .clock::before {
-    background:#B5C18E;
+body.light .clock::before {
+    background:#d7a6dffc;
     
 }
 
@@ -129,6 +127,9 @@ background:#D5CEA3;
     font-weight: bold;
     color: #D5CEA3;
 } 
+.light .numbers{
+    color:#1f3338
+}
 
 #three{
     position: absolute;
@@ -208,6 +209,11 @@ border-radius: 5px 5px 0px 0px;
 z-index: 10;
 }
 
+.light .hs::after{
+    background-color:#B9005B;
+
+}
+
 .mn::after{
 content: '';
 position: absolute;
@@ -219,8 +225,9 @@ border-radius: 2px 0px 0px 5px;
 z-index: 11;
 
 }
-
-
+.light .mn::after{
+ background-color: #CE5A67
+}
 .sec::after{
     content: '';
     position: absolute;
@@ -233,22 +240,27 @@ z-index: 11;
 
 } 
 
+.light .sec::after{
+    background-color:#E37070;
+}
+
+
 .time{
     height: 20px;
     position: absolute;
     top: 60%;
     padding: 0 5px;
     border: 1px solid #F8F4E1;
-    background: #E5D0AC;
+    background: #F8F4E1;
     border-radius: 5px;
     color: #3D3D3D;
     font-weight: bold;
     box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.1), -5px -5px 10px rgba(255, 255, 255, 0.1);
 }
 body.light .time{
-    color: #606060;
-    border: 1px solid #CAD3E3;
-    background: #CAD3E3;
+    color: #F6F1E9;
+    border: 1px solid #242526;
+    background: #f74966;
     box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.5), -5px -5px 10px rgba(255, 255, 255, 0.5);
 }
 
